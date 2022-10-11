@@ -1,1 +1,4 @@
 # DesarrolloWebJLALM
+UNIVERSITARIO : LLANOS MENDOZA JOSE LUIS ALBERTO
+CARRERA       : ING. SISTEMAS
+CORREO        : joseluisalbertojl70@gmail.com
