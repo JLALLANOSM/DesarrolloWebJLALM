@@ -1,0 +1,60 @@
+/* * todo
+   . class
+    # id*/
+
+    *{
+    
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(53, 51, 51);
+    }
+    .contenedor{
+        background: rgb(144, 144, 81);
+        text-align: center;
+        font-size: 20px;
+        color: #090909;
+        width: 100%;
+    }
+    .encabezado {
+        margin: auto;
+        width: 100%;
+        border: 1px solid #090909;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .titulo{
+        display: inline-block;
+        padding: 20px;
+        width: 700px;
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    #escudo{
+        height: 40px;
+    }
+    .cuerpo{
+        margin:auto;
+        width: 100%;
+        overflow: auto;
+    }
+    .izquierda{
+        display: inline-block;
+        background-color: rgb(53, 113, 93);
+        height: 20%;
+        vertical-align: top;
+    }
+    .contenido{
+        display: inline-block;
+        background-color: blue;
+        width: 80%;
+        border: 1px solid #090909;
+        vertical-align: top;
+    }

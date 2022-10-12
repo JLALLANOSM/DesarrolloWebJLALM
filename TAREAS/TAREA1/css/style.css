@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    background-color: rgb(118, 117, 115);
+    width: 900px;
+    margin: auto;
+}
+
+.cabeza{
+    background: rgb(48, 43, 43);
+    margin: auto;
+    width: 100%;
+    border: 2px solid #090909;
+}
+.logo{
+    display: inline-block;
+}
+
+.titulo{
+    display: inline-block;
+    padding: 20px;
+    width: 700px;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(185, 164, 59);
+}
+#escudo{
+    height: 40px;
+}
+.cuerpo{
+    margin: auto;
+    width: 100%;
+    border: 2px solid #d80a0a;
+}
+.izquierda{
+    display: inline-block;
+    background: chocolate;
+}
+.contenido{
+    display: inline-block;
+    background: rgb(183, 149, 124);
+    width: auto;
+}
+#name{
+    color: #b6c816;
+    text-align: center;
+}
+#fvilla{
+    width: 900px;
+}
+.foto{
+    width: 900px;
+}

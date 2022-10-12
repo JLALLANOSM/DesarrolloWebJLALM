@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+.contenedor{
+    color: aliceblue;
+}
+.cabeza{
+    background-color: rgb(148, 154, 23);
+    padding: 40px;
+    color: rgb(14, 26, 26);
+}
+
+.bio{
+    display: flex;
+    background-color: rgb(23, 24, 24);
+}
+.foto{
+    padding: 10px;
+}
+.contenido{
+    padding: 30px;
+    
+}
