@@ -1,28 +1,53 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body{
-    background-color: black;
-}
-.contenedor{
-    color: aliceblue;
-}
-.cabeza{
-    background-color: rgb(148, 154, 23);
-    padding: 40px;
-    color: rgb(14, 26, 26);
-}
-
-.bio{
+.cuerpo_yo{
     display: flex;
-    background-color: rgb(23, 24, 24);
+    flex-direction: column;
+    background-color: rgb(37, 44, 44);
+    width: 100%;
+}
+.titulo_yo {
+    background-color: goldenrod;
+    width: 100%;
+    padding: 10px;
+    color: rgb(23, 24, 24);
+    font-family: fantasy;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: "Audiowide", sans-serif;
+}
+.contenido_yo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
 }
 .foto{
-    padding: 10px;
+    background-color: rgba(12, 12, 12, 0.432);
+    width: 400px;
+    border-radius: 160px/20px;
 }
-.contenido{
-    padding: 30px;
-    
+.foto #imgYo{
+    padding: 5px;
+    border-radius: 160px/20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: goldenrod;
+    top: 0px;
+    rotate: 0deg;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+#imgYo:hover{
+    top: 80px;
+    rotate: 30deg;
+}
+.texto_yo{
+    color: aliceblue;
+    font-size: large;
+    padding: 50px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 700px;
 }

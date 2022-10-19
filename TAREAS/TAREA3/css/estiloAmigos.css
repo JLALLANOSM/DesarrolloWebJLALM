@@ -1,0 +1,40 @@
+.cuerpo_ami{
+    display: flex;
+    flex-direction: column;
+    background: wheat;
+    align-items: center;
+}
+.img_fondo1{
+    background: rgb(10, 123, 161);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 60px/8px;
+    box-shadow: 0 0 5px 1px #0a7ba1;
+    transition: all 300ms;
+}
+#f2{
+    position: absolute;
+    width: 200px;
+    top: 500px;
+    left: 600px;   
+}
+.titulo_ami{
+    background-color: #0a7ba1;
+    margin: 10px;
+    border-radius: 2px/7px;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    padding: 5px;
+}
+.img_fondo1:hover{
+    height: 520px;
+    width: 620px;
+}
+
+.img_fondo1 img{
+    width: 500px;
+    border-radius: 10px;
+    position: absolute;
+}
