@@ -1,6 +1,6 @@
 
 <?php
-    class Persona{
+    class Pila{
         private $tope;
         private $elementos[];
         private $max;
