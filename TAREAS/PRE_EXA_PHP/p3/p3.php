@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <title>Index</title>
 </head>
 <body>
@@ -26,30 +26,28 @@
     </div>
     <div class = Cuerpo>
         <div class = C1>
-        <?php 
-            if (isset( $_COOKIE['contador'] ) ) {
-                $valor=$_COOKIE['contador']+1;
-                echo "es la visita $valor";
-                setcookie("contador",$valor,0); /* expira en 1 hora */
+            <form action="cadena.php" method="post">
+                <label for="">Cadena: </label>
+                <input type="text" name="cadena" id="">
+                <input type="submit" value="Enviar">
+            </form>
+            <?php 
+                if(isset($_POST['cadena'])){
+                    setcookie('texto', $_POST['cadena'], 0);
+                    echo "Cookie Correcto";
                 }
-            else 
-                {
-                echo "es la visita 1";	
-                setcookie("contador",1,0); /* expira en 1 hora */ 
-                }
-        ?> 
-        <br>
-            Nombre de Estudiante: Susan Jhoseline Terán Cruz
-            <BR>Fecha:-------------
+            
+            ?>
         </div>
+        <br>
         <div class = C2>
             <div class = menu>
                 <ul>
-                    <li><a href = "index.php">Inicio</a></li>
-                    <li><a href = "p1.php">Pregunta 1</a></li>
-                    <li><a href = "/Repositorio/Parcial 1/Practicas/G1/2/P2.html">Pregunta 2</a></li>
+                    <li><a href = "../p1/index.php">Inicio</a></li>
+                    <li><a href = "../p2/p2.php">Pregunta 1</a></li>
+                    <li><a href = "../p3/p3.php">Pregunta 2</a></li>
                     <li><a href = "P3.html">Pregunta 3</a></li>
-                </div>
+                </ul>
             </div>
         </div>
     </div>

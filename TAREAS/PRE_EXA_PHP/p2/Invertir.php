@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <title>Index</title>
 </head>
 <body>
@@ -25,13 +25,16 @@
         </div>
     </div>
     <div class = Cuerpo>
-        <div class = C1>
-        <form action="restarVec.php" method="post">
-            <label for="">Tamanio n:</label>
-            <input type="number" name="n" id="">
-            <input type="submit" value="Enviar">
-        </form>
-        <br>
+        <div class = c1>
+            <p>Invertir Cadena</p>
+            <?php
+                include('Operacion.php');  
+                $cadena = $_COOKIE['texto'];
+                echo "Invertir la cadena: $cadena = &nbsp; ";
+                $inv = new Operacion($cadena);
+                $inv->invertir();
+            ?>
+            <br>
             
         </div>
         <div class = C2>
@@ -39,7 +42,7 @@
                 <ul>
                     <li><a href = "index.php">Inicio</a></li>
                     <li><a href = "p1.php">Pregunta 1</a></li>
-                    <li><a href = "/Repositorio/Parcial 1/Practicas/G1/2/P2.html">Pregunta 2</a></li>
+                    <li><a href = "p2.php">Pregunta 2</a></li>
                     <li><a href = "P3.html">Pregunta 3</a></li>
                 </div>
             </div>
