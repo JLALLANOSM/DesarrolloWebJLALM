@@ -57,7 +57,7 @@
                             <input type="number" name="n" id="">
                             <label for="">Columna m:</label>
                             <input type="number" name="m" id="">
-                            <input type="submit" value="Enviar">
+                            <input type="submit" name="Enviar" value="Enviar">
                         </form>
 
 

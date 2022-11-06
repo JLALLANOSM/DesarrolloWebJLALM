@@ -96,10 +96,17 @@
     position: relative;
 }
 .centro{
+    display: flex;
     width: 550px;
-    background: #e7e8ea;
+    background: #232379;
     padding: 5px;
 }
+.formulario {
+    display: flex;
+    background: #ca0ea2;
+}
+
+
 .menu{
     width: 200px;
     background: #c2cbf4;
