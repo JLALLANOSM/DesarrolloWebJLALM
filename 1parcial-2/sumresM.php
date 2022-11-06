@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/desarrollowebjlalm/1parcial-2/estilo.css">
     <title>Document</title>
 </head>
 
@@ -50,77 +50,95 @@
                     </div>
                 </div>
                 <div class="centro">
-                        <p>Pregunta 2</p>
-                        <?php
-                            ob_start();
-                            if (isset($_POST['n'])) {
-                                $f = $_POST['n'];
-                                $c = $_POST['m'];
-                                setcookie('fil', $f, 0);
-                                setcookie('col', $c, 0);
-
-                                $n = $_COOKIE['fil'];
-                                $m = $_COOKIE['col'];
-                        ?>
-                        <div class="formulario">
-                            <form action="sumresM.php" method="post">
-                                <?php
-                                    echo '<br/> M <br/>';
-                                    for ($i = 0; $i < $n; $i++) {
-                                        for ($j = 0; $j < $m; $j++) {
-                                ?>
-                                <label for="">[<?php echo $i; ?>] [<?php echo $j; ?>]: </label>
-                                <input type="number" name="v<?php echo$i; ?>[]" id="">
-
-                                <?php
-                                        }
-                                        echo '<br />';
-                                    }
-                                ?>
-                                <input type="submit" value="Calcular">
-                            </form>
+                        <div>
+                            <p>Pregunta 2</p>
                         </div>
+                        <div>
+                            <?php
+                                ob_start();
+                                if (isset($_POST['Enviar'])) {
+                                    $f = $_POST['n'];
+                                    $c = $_POST['m'];
+                                    setcookie('fil', $f, 0);
+                                    setcookie('col', $c, 0);
 
-
-                        <?php
-                            } 
-                            else {
-                                if (isset($_POST['Calcular'])) {
-                                    echo "Suma Fil Col: <br/>";
                                     $n = $_COOKIE['fil'];
                                     $m = $_COOKIE['col'];
-                                    for ($i = 0; $i < $n; $i++) {
-                                        for ($j = 0; $j < $m; $j++) {
-                                            $m1[$i][$j] = $_POST["v$i"][$j];
-                                            echo $m1[$i][$j];
-                                        }
-                                        echo "<br/>";
-                                    }
-                                    $fi = 0;
-                                    $co = 0;
-                                    /*
-                                    for ($i = 0; $i < $n; $i++) {
-                                    for($j= 0; $j < $m; $j++){
-                                    $fi = $fi + $m1[$i][$j];
-                                    $co = $co + $m1[$j][$i];
-                                    }
-                                    $v1[$i] = $fi;
-                                    $v2[$i] = $co;
-                                    }
-                                    echo "</br> La Suma Col: ";
-                                    for ($i = 0; $i < $n; $i++) {
-                                    echo "<br>(" . $v1[$i] . ")";
-                                    }
-                                    echo "</br> La Suma Col: ";
-                                    for ($i = 0; $i < $n; $i++) {
-                                    for ($j= 0; $j < $m; $j++){
-                                    echo "<br>(" . $m1[$i][$j]. ")";
-                                    }
+                            ?>
+                            
+                                <form action="sumresM.php" method="post">
+                                    <div class="tabla">
+
                                     
-                                    }*/
+                                        <table>
+                                            <tr>
+                                                <td style="text-align: center;" colspan="<?php echo$m?>">Matriz [<?php echo"$n x $m";?>]</td>
+                                            </tr>
+                                    <?php
+                                        for ($i = 0; $i < $n; $i++) {
+                                    ?>
+
+                                            <tr>
+                                    <?php
+                                            for ($j = 0; $j < $m; $j++) {
+                                    ?>
+                                                <td>
+                                                        <label for="">[<?php echo $i; ?>] [<?php echo $j; ?>]: </label>
+                                                        <input type="number" name="v<?php echo$i; ?>[]" id="">
+                                                </td>
+                                    <?php
+                                            }
+                                    ?>
+                                            </tr>
+                                    <?php
+                                            echo '<br />';
+                                        }
+                                    ?>
+                                        </table>
+                                    </div>
+                                    <input type="submit" name="Calcular" value="Calcular">
+                                    
+                                </form>
+
+
+                            <?php
+                                } 
+                                else {
+                                    if (isset($_POST['Calcular'])) {
+                                        echo "<br/> Suma Fil Col: <br/>";
+                                        $n = $_COOKIE['fil'];
+                                        $m = $_COOKIE['col'];
+                                        for ($i = 0; $i < $n; $i++) {
+                                            for ($j = 0; $j < $m; $j++) {
+                                                $m1[$i][$j] = $_POST["v$i"][$j];
+                                                echo $m1[$i][$j];
+                                            }
+                                            echo "<br/>";
+                                        }
+                                        $fi = 0;
+                                        $co = 0;
+
+                                        for ($i = 0; $i < $n; $i++) {
+                                            $v1[$i] = 0;
+                                            $v2[$i] = 0;
+                                            for($j= 0; $j < $m; $j++){
+                                                $v1[$i] = $v1[$i] + $m1[$i][$j];
+                                            
+                                                $v2[$i] = $v2[$i] + $m1[$j][$i];
+                                            }
+                                        }
+                                        echo "</br> La Suma Filas: ";
+                                        for ($i = 0; $i < $n; $i++) {
+                                            echo "<br>(" . $v1[$i] . ")";
+                                        }
+                                        echo "</br> La Suma Col: ";
+                                        for ($i = 0; $i < $m; $i++) {
+                                            echo "<br>(" . $v2[$i] . ")";
+                                        }
+                                    }
                                 }
-                            }
-                        ?>
+                            ?>
+                        </div>
                 </div>
                 <div class="derecha">
                     <div>

@@ -21,7 +21,7 @@
     background: #c2cbf4;
 }
 #uni {
-    color: red;
+    color: rgb(12, 10, 10);
 }
 .detalle{
     display: flex;
@@ -98,14 +98,18 @@
 .centro{
     display: flex;
     width: 550px;
-    background: #232379;
+    background: #3d3d56;
     padding: 5px;
-}
-.formulario {
-    display: flex;
-    background: #ca0ea2;
+    flex-direction: row;
 }
 
+
+.inputs{
+    width: 100px;
+    height: 20px;
+    background: #0c0c70;
+    margin: 2px;
+}
 
 .menu{
     width: 200px;
@@ -165,16 +169,29 @@
 }
 .med{
     width: 100px;
-    background: rgb(171, 16, 16);
+    background: rgb(154, 198, 9);
 }
 .anio{
     background: #0b2796;
 }
-td, th{
-    border: 2px solid #1e1e1e;
-    padding: 10px;
+.tabla {
+    width: 500px;
+    padding: 5px;
+    background-color: #6fc42a;
+}
+.tabla input {
+    width: 40px;
+}
+.tabla label{
+    font-size: 10px;
+    align-items: center;
+    vertical-align: middle;
 }
 
-.tabla {
-    padding: 10px;
+td, th{
+    align-items: center;
+    vertical-align: super;
+    border: 2px solid #1e1e1e;
+    padding: 5px;
 }
+
