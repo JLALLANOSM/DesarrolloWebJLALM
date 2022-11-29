@@ -111,29 +111,31 @@
                                         for ($i = 0; $i < $n; $i++) {
                                             for ($j = 0; $j < $m; $j++) {
                                                 $m1[$i][$j] = $_POST["v$i"][$j];
-                                                echo $m1[$i][$j];
+                                                echo " [".$m1[$i][$j]."]";
                                             }
                                             echo "<br/>";
                                         }
                                         $fi = 0;
-                                        $co = 0;
+                                        $k = 0;
+                                        $v1 = array_fill(0, $n, 0);
+                                        $v2 = array_fill(0, $m, 0);
 
                                         for ($i = 0; $i < $n; $i++) {
-                                            $v1[$i] = 0;
-                                            $v2[$i] = 0;
                                             for($j= 0; $j < $m; $j++){
-                                                $v1[$i] = $v1[$i] + $m1[$i][$j];
-                                            
-                                                $v2[$i] = $v2[$i] + $m1[$j][$i];
+                                                
+                                                $v1[$i] += $m1[$i][$j];
+                            
+                                                $v2[$j] += $m1[$i][$j];
+                                                
                                             }
                                         }
                                         echo "</br> La Suma Filas: ";
                                         for ($i = 0; $i < $n; $i++) {
-                                            echo "<br>(" . $v1[$i] . ")";
+                                            echo "<br>[" . $v1[$i] . "]";
                                         }
-                                        echo "</br> La Suma Col: ";
+                                        echo "</br> La Suma Col: <br>";
                                         for ($i = 0; $i < $m; $i++) {
-                                            echo "<br>(" . $v2[$i] . ")";
+                                            echo " [$v2[$i]] ";
                                         }
                                     }
                                 }

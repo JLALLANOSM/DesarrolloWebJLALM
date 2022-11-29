@@ -34,7 +34,7 @@
                 <td> <?php echo $row["precio"]; ?> </td>
                 <td><?php echo $row["categoria"]; ?></td>
                 <td>
-                    <a href="formEditarProdcuto.php?id=<?php echo $row["id"]?>">Editar</a>
+                    <a href="formEditarProducto.php?id=<?php echo $row["id"]?>">Editar</a>
                     <a href="delete.php?id=<?php echo $row["id"] ?>">Eliminar</a>
                 </td>
             </tr>

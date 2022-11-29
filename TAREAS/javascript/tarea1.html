@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        cadena=prompt('ingrese la cadena separado por ",": ');
+        var arrayCadena = cadena.split(",");
+        arrayCadena.sort((a,b)=>{
+            if(a==b){
+                return 0;
+            }
+            if(a>b){
+                return -1;
+            }
+            return 1;
+        });
+
+        for(var i=0; i<arrayCadena.length; i++){
+            document.write(arrayCadena[i]+"_");
+        }
+    </script>
+</body>
+</html>
