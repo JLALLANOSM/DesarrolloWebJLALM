@@ -1,0 +1,15 @@
+td, th{
+    border: 2px solid #1e1e1e;
+    padding: 10px;
+}
+
+.tabla {
+    padding: 10px;
+}
+
+.c1{
+    width: 20px;
+    height: 100%;
+    background-color: blue;
+    font-weight: bold;
+}
