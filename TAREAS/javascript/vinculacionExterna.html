@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function coche(marca, modelo, color){
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.mostrar = MostrarCoche;
+        }
+        function MostrarCoche(){
+            document.write("<p>Marca: "+this.marca+"</p>");
+            document.write("<p>Modelo: "+this.modelo+"</p>");
+            document.write("<p>Color: "+this.color+"</p>");
+        }
+        var coche1 = new coche("Fort", "2007", "Red");
+        var coche2 = new coche("Toyota", "2027", "Green");
+        coche1.mostrar();
+        coche2.mostrar();
+        
+
+
+        function factorial(n){
+            
+            let fact = 1;
+            for(let i=1; i<=n; i++){
+                fact = fact*i;
+            }
+
+            document.write("Factorial: "+fact);
+        }
+        
+        factorial(3);
+
+
+        
+    </script>
+</body>
+</html>

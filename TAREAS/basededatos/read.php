@@ -1,3 +1,4 @@
+<?php include('verificar.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
+    <?php
+        echo "bienvenido: " .$_SESSION['nombres'];
         include ("conexion.php");
         $sql = "SELECT id, nombre, descripcion, precio, categoria FROM productos";
         $resultado = $con->query($sql);

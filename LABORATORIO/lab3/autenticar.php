@@ -17,7 +17,7 @@
         $_SESSION['correoelectronico'] = $correoelectronico;
         $_SESSION['nombres'] = $fil['nombres'];
         $_SESSION['nivel'] = $fil['nivel'];
-        header("location:read.php");
+        header("location:Fintroduccion.html");
     }else{
         echo "autenticacion incorrecta";
     }
