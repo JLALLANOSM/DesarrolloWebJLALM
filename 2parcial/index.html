@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+    <script src="ajax.js"></script>
+    
+</head>
+<body>
+    <div class="super">
+        <div class="cabecera" id="cabecera">
+            <div id="titulo">
+                <div class="alin">
+                    <DIV>
+                        <h2 id="texto">Estudiante: Jose Luis Alberto LLanos Mendoza</h2>
+                    </DIV>
+                    <div>
+                        <h2>Cu: 355041</h2>
+                    </div>
+                </div>
+                
+                
+                
+                <!--button id="boton" onclick="nomostrar();">Ocultar Image</button-->
+            </div>
+        </div>
+        <div class="nav"id="nav">
+            <ul class="menu">
+                <li><button class = "btn" id= "btn1" onclick="cambio();">Pregunta 1</button></li>
+                <!--li><button id="btn">pregunta1</button></li-->
+                <li><button class = "btn" id="btn2" onclick="pregunta2(); javascript:cargarContenido('pregunta2.html')">Pregunta 2</button></li>
+                <li><button class = "btn" id = "btn3" onclick="javascript:cargarContenido('forminsertar.html')">Pregunta 3</button></li>
+                <li><button class = "btn" id= "btn4" onclick="javascript:cargarContenido('listar.php')">Pregunta 4</button></li>
+                <li><button class = "btn"  id="btn5" onclick="javascript:cargarContenido('formN.html')">Pregunta 5</button></li>
+            </ul>
+        </div>
+    
+        <div id="Scontenido" class="Scontenido">
+            <div class="contenido" id="contenido">
+                <h2>contenido</h2>
+                <button onclick="javascript:cargarContenido('pregunta3.html')"></button>
+            </div>
+            <div class="resultado" id="resultado">
+    
+            </div>
+            
+        </div>
+        <div class="pie" id="mensaje">
+            <h2>2do Examen Parcial Sis-256</h2>
+        </div>
+        
+    </div>
+    
+    <script>
+        var cont = 0;
+        function pregunta2(){
+            document.getElementById('titulo').innerHTML = 'Pregunta 2 DOM en JavaScript';
+            document.getElementById('titulo').style.fontSize = '20px';
+            document.getElementById('titulo').style.display = 'block';
+            if(cont == 0){
+                document.getElementById('titulo').style.display = 'block';
+                document.getElementById('btn1').id = 'btn12';
+                document.getElementById('btn3').id = 'btn32';
+                document.getElementById('btn5').id = 'btn52';
+                document.getElementById('btn4').id = 'btn42';
+                document.getElementById('btn2').id = 'btn22';
+                document.getElementById('resultado').id = 'resultado1';
+                document.getElementById('cabecera').id = 'cabecera1';
+                document.getElementById('mensaje').id = 'mensaje1';
+                document.getElementById('contenido').id = 'contenido1';
+                document.getElementById('Scontenido').id = 'Scontenido1';
+                document.getElementById('nav').id = 'nav1';
+
+
+                cont = 1;
+            }else{
+                document.getElementById('titulo').style.display = 'none';
+                document.getElementById('btn12').id = 'btn1';
+                document.getElementById('btn32').id = 'btn3';
+                document.getElementById('btn52').id = 'btn5';
+                document.getElementById('btn42').id = 'btn4';
+                document.getElementById('btn22').id = 'btn2';
+                document.getElementById('resultado1').id = 'resultado';
+                document.getElementById('cabecera1').id = 'cabecera';
+                document.getElementById('mensaje1').id = 'mensaje';
+                document.getElementById('contenido1').id = 'contenido';
+                document.getElementById('Scontenido1').id = 'Scontenido';
+                document.getElementById('nav1').id = 'nav';
+
+                cont = 0;
+            }
+
+        }
+        
+        var contador= 0;
+        function cambio(){
+            if(contador == 0){
+                document.getElementById('titulo').style.display = 'block';
+                contador = 1;
+            }else{
+                document.getElementById('titulo').style.display = 'none';
+                contador = 0;
+            }
+        }
+        //btn1.addEventListener('onclick', cambio, true);
+        //document.getElementById("texto").innerHTML = "Pregunta dos";
+        /*function mostrar(){
+            document.getElementById('titulo').style.display = 'block';
+            
+        }
+        function nomostrar(){
+            document.getElementById('titulo').style.display = 'none';
+        }*/
+    </script>
+    
+</body>
+</html>
