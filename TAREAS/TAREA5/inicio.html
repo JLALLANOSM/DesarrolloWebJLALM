@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+    <script src="ajax.js"></script>
+    
+</head>
+<body>
+    <div class="cabecera">
+        <div id="titulo">
+            
+            <h2>Estudiante: Jose Luis Alberto LLanos Mendoza</h2>
+            <button id="boton" onclick="nomostrar();">Ocultar Image</button>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="menu">
+            <li><button href="inicio.html">Inicio</button></li>
+           <!--li><a href="javascript:cargarContenido('pregunta1.html')">Pregunta 1</a></li -->
+           <li><button id="btn">pregunta1</button></li>
+            <li><button onclick="javascript:cargarContenido('pregunta2.html')">Pregunta 2</button></li>
+            <li><button onclick="javascript:cargarContenido('pregunta3.html')">Pregunta 3</button></li>
+            <li><button onclick="javascript:cargarContenido('pregunta4.html')">Pregunta 4</button></li>
+        </ul>
+    </div>
+
+    <div id="contenido">
+        <ul>
+            <div class="caja" id="caja">Hola</div>
+            <li>CALOR MENIDNAS</li>
+            <li>CALOR MENIDNAS</li>
+            <li>CALOR MENIDNAS</li>
+            <li>CALOR MENIDNAS</li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("texto").innerHTML = "Pregunta dos";
+        function mostrar(){
+            document.getElementById('titulo').style.display = 'block';
+            
+        }
+        function nomostrar(){
+            document.getElementById('titulo').style.display = 'none';
+        }
+
+        var btn = document.getElementById("btn"),
+            caja = document.getElementById("caja"),
+            contador= 0;
+        function cambio(){
+            if(contador == 0){
+                caja.classList.add('azul');
+                contador = 1;
+            }else{
+                caja.classList.remove('azul');
+                contador = 0;
+            }
+        }
+        btn.addEventListener('click', cambio, true);
+    </script>
+    
+</body>
+</html>

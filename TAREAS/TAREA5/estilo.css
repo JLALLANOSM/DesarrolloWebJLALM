@@ -1,0 +1,33 @@
+.cabeza{
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 100px;
+}
+.nav{
+    background-color: rgb(212, 212, 85)    ;
+    width: 100%;
+    height: 100px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#titulo{
+    display: none;
+}
+
+.caja{
+    border: 2px solid red;
+    width: 100px;
+    margin: 20px;
+}
+.caja.azul{
+    border: 2px solid green;
+    background: blue;
+    color: aliceblue;
+}
