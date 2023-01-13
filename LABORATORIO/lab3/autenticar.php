@@ -11,7 +11,7 @@
     $filas = $resultado->num_rows;
 
     if($filas > 0){
-        echo "usuario autenticado";
+        echo "usuario autenticadooo";
 
         $fil = $resultado->fetch_assoc();
         $_SESSION['correoelectronico'] = $correoelectronico;
