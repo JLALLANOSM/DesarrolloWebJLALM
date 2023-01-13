@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../jquery/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="button" value="Alumnos" onclick="operacion(1);">
+    
+    <input type="button" value="Profesor" onclick="operacion(2);">
+    
+    <input type="button" value="Padres" onclick="operacion(3);">
+    <br><br>
+    Buscar: <input type="text" name="" id="c_buscar" onchange="buscar();" onfocus="vaciar(this);" <!--onblur="verEntrada(this);"-->
+
+    <div id="mostrar_mensaje"></div>
+
+
+
+    
+
+    <script>
+        function vaciar(texto){
+            texto.value = '';
+        }
+
+        function verEntrada(texto){
+            if (texto.value == '') {
+                alert("No hay nada que Buscar...");
+            }
+        }
+        function buscar(){
+            mibusqueda = document.getElementById('c_buscar').value;
+            var parametros ={
+                "mibusqueda":mibusqueda,
+                "accion" :4
+                /*
+                "nombre": "jose",
+                "apellido": "llanos",
+                "cel": "12345"*/
+            };
+
+            $.ajax({
+                data: parametros,
+                url: 'codigoPhp.php',
+                type: 'POST',
+                beforeSend: function(){
+                    $('#mostrar_mensaje').html("Mensaje antes de enviar");
+                },
+                success: function(mensaje){
+                    $('#mostrar_mensaje').html(mensaje);
+                }
+            });
+        }
+
+        function operacion(opcion){
+            document.getElementById('c_buscar').value = "";
+            accion = opcion;
+            var parametros ={
+                "accion":accion,
+                /*
+                "nombre": "jose",
+                "apellido": "llanos",
+                "cel": "12345"*/
+            };
+
+            $.ajax({
+                data: parametros,
+                url: 'codigoPhp.php',
+                type: 'POST',
+                beforeSend: function(){
+                    $('#mostrar_mensaje').html("Mensaje antes de enviar");
+                },
+                success: function(mensaje){
+                    $('#mostrar_mensaje').html(mensaje);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
