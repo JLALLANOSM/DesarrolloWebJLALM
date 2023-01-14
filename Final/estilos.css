@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+}
+.supercontenedor {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 130px;
+    height: 130px;
+    border: 2px solid black;
+}
+.menu_d{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 67px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    color: #020202;
+    border: 2px dotted black;
+    /*padding: 15px;*/
+}
+
+.cuerpo{
+    display: flex;
+    flex-wrap: row;
+    width: 100%;
+    /*height: 200px;*/
+    align-content: flex-start;
+    border: 2px solid black;
+    background: whitesmoke;
+}
+#contenido{
+    padding: 10px;
+    width: 60%;
+
+    height: 320px;
+    border: 2px solid black;
+    background: whitesmoke;
+    position: relative;
+}
+.navmenu{
+    display: flex;
+    flex-direction: row;
+    background-color: #0b2796;
+    width: 100%;
+}
+#resultado{
+    width: 100%;
+    height: 350px;
+    border: 2px solid #020202;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+#submenu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #17297d;
+
+}
+#submenu ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    background-color: #caccd4;
+    padding: 1px;
+}
+
+#submenu ul li{
+    display: block;
+    background: #caccd4;
+    border-left: 1px solid #0a0a0a;
+    font-size: 15px;    
+    padding: 20px;
+    margin: 1px;
+    width: 100%;
+    color: #020202;
+}
+#submenu ul li a{
+    color: black;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 130px;
+}
+#p1{
+    width: 100%;
+    height: 30px;
+    border: 2px solid black;
+    align-content: center;
+    text-align: center;
+    background-color: #caccd4;
+}
+#p2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.tabla {
+    width: 500px;
+    padding: 5px;
+    background-color: #6fc42a;
+}
+.tabla input {
+    width: 40px;
+}
+.tabla label{
+    font-size: 10px;
+    align-items: center;
+    vertical-align: middle;
+}
+.btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+td, th{
+    align-items: center;
+    vertical-align: super;
+    border: 2px solid #1e1e1e;
+    padding: 5px;
+}
