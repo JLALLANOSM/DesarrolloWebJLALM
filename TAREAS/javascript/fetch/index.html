@@ -4,47 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Datos del Usuario</h1>
-    <div id="contenedor">
-        <form id="formulario">
-            <div>
-                Nombre: <input type="text" id="idnombre" name="nombre" placeholder="#">
+    <div class="supercontenedor">
+        <div class="cabeza">
+            <div class="logo">
+                <img src="usfx.png" alt="">
             </div>
-            <br>
-            <div>
-                Usuario: <input type="text" id="idusuario" name="usuario" placeholder="#">
+            <div class="detalle">
+                <div class="detalle_1">
+                    <h2 id="uni">UNIVERSIDAD DE SAN FRANCISCO XAVIER</h2>
+                    <div class="detalle__1">
+                        <P id="facu">FACULTAD DE TECNOLOGIA</P>
+                        <p>
+                            <font COLOR="red">
+                               S u c r 
+                            </font>
+                            <font COLOR="yellow">
+                            e - B o l
+                            </font>
+                            <font COLOR="green">
+                                i v i a 
+                            </font>
+                        </p>
+                        
+                    </div>
+                </div>
+                <P>Carrera: Ing. Sistemas, Ciencias de la Computacion</P>
+                <p>Semestre 2-2022</p>
             </div>
-            <br>
-            <div>
-                Email: <input type="email" id="idnombre" name="email" placeholder="#">
+            <div class="logo">
+                <img src="tecnologia.png" alt="">
             </div>
-            <br>
-            <input type="file" name="foto" id="archivo"><br><br>
-            <input type="submit" value="Enviar Informacion">
-        </form>
+        </div>
+        <div class="menu">
+            <div>
+                <ul>
+                    <li><a href="index.php">INICIO</a></li>
+                    <li><a href="javascript:cargarContenido('formdatos.php')">PREGUNTA 2</a></li>
+                    <li><a href="p3.php">PREGUNTA 3</a></li>
+                    <li><a href="p4.php">PREGUNTA 4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cuerpo" id="cuerpo">
+            <div id="contenido">
+                cntenido
+                
+            </div>
+            <div id="resultado">
+                resultado
+                <!--<h3>Perfil del Usuario</h3>
+                <div style="background-color: aquamarine;" id="perfil">
+                    --<div>
+                        <div>
+                            <p>Foto Usuario</p>
+                            <img style = "width: 80px;" src="#" alt="" srcset="">
+                        </div>
+                        <div>
+                            <p>Nombre: </p>
+                            <h1>Nombre</h1>
+                            <p>Usuario: </p>
+                            <h1>Usuario</h1>
+                            <p>Email: </p>
+                            <h1>Email</h1>
+                        </div>
+                    </div>
+                    
+                </div>-->
+            </div>
+        </div>
+        <div class="pie">
+            Examen Final
+        </div>
+
     </div>
-    <br>
-    <h1>Perfil del Usuario</h1>
-    <div style="background-color: aquamarine;" id="perfil">
-        <!--<div>
-            <div>
-                <p>Foto Usuario</p>
-                <img style = "width: 35%;" src="#" alt="" srcset="">
-            </div>
-            <div>
-                <p>Nombre: </p>
-                <h1>Nombre</h1>
-                <p>Usuario: </p>
-                <h1>Usuario</h1>
-                <p>Email: </p>
-                <h1>Email</h1>
-            </div>
-        </div>-->
-        
-    </div>
+    
+    
+    
     
 
 

@@ -10,7 +10,7 @@
 <body>
     <h2>Crud con Imagenes</h2>
     <hr>
-    <a href="newCoche.php">Agregar</a>
+    <a id="btnagregar" href="newCoche.php">Agregar</a>
     <hr>
     <table>
         <thead>
@@ -36,8 +36,8 @@ while($row = $resultado->fetch_assoc()) {
             </td>
             <td>
                 <div>
-                    <input id="btneditar" type="submit" value="Editar">
-                    <input id="btneliminar" type="submit" value="Eliminar">
+                    <a href="formEditarCoche.php?id=<?php echo$row["id"]?>" class="btneditar">Editar</a>
+                    <a href="deleteCoche.php?id=<?php echo$row["id"]?>" class="btneliminar">Eliminar</a>
                 </div>
             </td>
         </tbody>

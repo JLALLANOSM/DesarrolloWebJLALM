@@ -13,7 +13,7 @@
     <div>
         <form action="consulta.php" method="post" enctype="multipart/form-data">
             <div>
-                Marca: <input type="text" name="nombre" id="nombre">
+                Marca: <input type="text" name="marca" id="marca">
             </div>
             <br>
             <div>

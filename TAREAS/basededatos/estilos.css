@@ -1,3 +1,199 @@
 th, td{
     border: 1px solid black;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+}
+.cabeza{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background: #c2cbf4;
+}
+#uni {
+    color: rgb(12, 10, 10);
+}
+.detalle{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(8, 8, 8);
+}
+.detalle p{
+    width: 100%;
+}
+.detalle_1{
+    text-align: center;
+    width: 100%;
+}
+
+.detalle__1{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.detalle__1 #facu{
+    margin: 10px;
+    color: blue;
+    font-size: 20px;
+}
+.detalle__1 p{
+    margin: 10px;
+}
+
+.logo img{
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+.titulo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgb(253, 253, 254);
+    font-size: 20px;
+    text-align: center;
+    color: #020202;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+.caja{
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 2px solid black;
+}
+.cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*height: 200px;*/
+    align-content: flex-start;
+    background: rgb(43, 40, 40);
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    background: #c2cbf4;
+    position: relative;
+}
+.centro{
+    display: flex;
+    width: 550px;
+    background: #ababb4;
+    padding: 5px;
+    flex-direction: row;
+}
+
+
+.inputs{
+    width: 100px;
+    height: 20px;
+    background: #0c0c70;
+    margin: 2px;
+}
+
+.menu{
+    width: 200px;
+    background: #c2cbf4;
+}
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(12, 85, 109);
+    padding: 10px;
+}
+
+.menu ul li{
+    display: block;
+    background: #caccd4;
+    border: 1px solid #0a0a0a;
+    font-size: 13px;    
+    padding: 5px;
+    margin: 1px;
+    width: 100px;
+    color: #020202;
+}
+.menu ul li a{
+    color: black;
+}
+.derecha{
+    border: 2px solid #020202;
+}
+.derecha img{
+    width: 90px;
+}
+.estudiante{
+    border-top: 2px solid rgb(11, 11, 11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 231, 237);
+    text-align: center;
+    
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.izq{
+    width: 250px;
+    font-size: 20px;
+}
+.med{
+    width: 100px;
+    background: rgb(154, 198, 9);
+}
+.anio{
+    background: #0b2796;
+}
+.tabla {
+    width: 500px;
+    padding: 5px;
+    background-color: #6fc42a;
+}
+.tabla input {
+    width: 40px;
+}
+.tabla label{
+    font-size: 10px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+td, th{
+    align-items: center;
+    vertical-align: super;
+    border: 2px solid #1e1e1e;
+    padding: 5px;
+}

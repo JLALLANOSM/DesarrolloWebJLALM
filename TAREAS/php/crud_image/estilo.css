@@ -1,10 +1,17 @@
 a{
-    border-radius: 5px;
+    
     padding: 5px;
-    background-color: blue;
+    border-radius: 5px;
     font-size: 20px;
     color: aliceblue;
     text-decoration: none;
+    
+    cursor: pointer;
+}
+#btnagregar{
+    
+    background-color: blue;
+    
 }
 
 th, td{
@@ -12,16 +19,11 @@ th, td{
     padding: 5px;
 }
 
-#btneditar{
-    background: gold;
-    border-radius: 7px;
-    cursor: pointer;
+.btneditar{
+    background: green;
 }
-#btneliminar{
+.btneliminar{
     background: red;
-    border-radius: 7px;
-    color: aliceblue;
-    cursor: pointer;
 }
 
 #foto{
